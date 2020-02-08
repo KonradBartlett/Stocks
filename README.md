@@ -1,5 +1,6 @@
 # Stocks
 Whiteboard question used to determine which days to buy and sell
+Algorithm is in \src\app\app.component.ts
 
 # Run:
 - Have node installed and set up on your computers environment settings
