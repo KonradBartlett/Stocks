@@ -1,0 +1,37 @@
+<div class="grid-container">
+  <div class="grid-item">
+    <h1>Days:</h1>
+    <ul>
+      <li *ngFor="let n of Days">
+        <a style="float: left;">Day: {{n.Day}}</a>
+        <a style="float: left; padding-left: 5%;">Price: {{n.Value}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="grid-item">
+    <h1>Differences:</h1>
+    <ul>
+      <li *ngFor="let n of Diffs">
+        <a style="float: left;">Bought Date: {{n.Bought}}</a>
+        <a style="float: left; padding-left: 5%;">Bought Price: {{n.Value1}}</a>
+        <a style="float: left; padding-left: 5%;">Sold Date: {{n.Sold}}</a>
+        <a style="float: left; padding-left: 5%;">Sold Price: {{n.Value2}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="grid-item">
+    <h1>Result:</h1>
+      <h4>Best Diffs</h4>
+      <ul>
+        <li *ngFor="let n of Sales">
+          <a style="float: left;">Bought Date: {{n.Day1}}</a>
+          <a style="float: left; padding-left: 5%;">Bought Price: {{n.Value1}}</a>
+          <a style="float: left; padding-left: 5%;">Sold Date: {{n.Day2}}</a>
+          <a style="float: left; padding-left: 5%;">Sold Price: {{n.Value2}}</a>
+          <a style="float: left; padding-left: 5%;">Diff: {{n.Diff}}</a>
+        </li>
+      </ul>
+      <h4>Total Sales</h4>
+      <a>{{total}}</a>
+  </div>
+</div>
