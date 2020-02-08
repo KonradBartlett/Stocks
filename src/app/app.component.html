@@ -4,7 +4,7 @@
     <ul>
       <li *ngFor="let n of Days">
         <a style="float: left;">Day: {{n.Day}}</a>
-        <a style="float: left; padding-left: 5%;">Price: {{n.Value}}</a>
+        <a class="inline-attribute">Price: {{n.Value}}</a>
       </li>
     </ul>
   </div>
@@ -13,10 +13,10 @@
     <ul>
       <li *ngFor="let n of Diffs">
         <a style="float: left;">Bought Date: {{n.Bought}}</a>
-        <a style="float: left; padding-left: 5%;">Bought Price: {{n.Value1}}</a>
-        <a style="float: left; padding-left: 5%;">Sold Date: {{n.Sold}}</a>
-        <a style="float: left; padding-left: 5%;">Sold Price: {{n.Value2}}</a>
-        <a style="float: left; padding-left: 5%;">Diff: {{n.Diff}}</a>
+        <a class="inline-attribute">Bought Price: {{n.Value1}}</a>
+        <a class="inline-attribute">Sold Date: {{n.Sold}}</a>
+        <a class="inline-attribute">Sold Price: {{n.Value2}}</a>
+        <a class="inline-attribute">Diff: {{n.Diff}}</a>
       </li>
     </ul>
   </div>
@@ -28,13 +28,13 @@
       <ul>
         <li *ngFor="let n of Sales">
           <a style="float: left;">Bought Date: {{n.Day1}}</a>
-          <a style="float: left; padding-left: 5%;">Bought Price: {{n.Value1}}</a>
-          <a style="float: left; padding-left: 5%;">Sold Date: {{n.Day2}}</a>
-          <a style="float: left; padding-left: 5%;">Sold Price: {{n.Value2}}</a>
-          <a style="float: left; padding-left: 5%;">Diff: {{n.Diff}}</a>
+          <a class="inline-attribute">Bought Price: {{n.Value1}}</a>
+          <a class="inline-attribute">Sold Date: {{n.Day2}}</a>
+          <a class="inline-attribute">Sold Price: {{n.Value2}}</a>
+          <a class="inline-attribute">Diff: {{n.Diff}}</a>
         </li>
       </ul>
       <h4>Total Sales</h4>
-      <a>{{total}}</a>
+      <a class="amount">{{total}}</a>
   </div>
 </div>

@@ -4,8 +4,23 @@
     padding: 10px;
   }
   
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    text-align: center;
-  }
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  padding-right: 30px;
+  text-align: center;
+}
+
+ul {
+  margin-bottom: 50px;
+}
+
+.amount {
+  padding-left: 0px;
+  margin-bottom: 50px;
+}
